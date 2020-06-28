@@ -31,3 +31,5 @@ function addEdge(origin, destination) {
 // Create the Graph
 airports.forEach(addNode);
 routes.forEach(route => addEdge(...route))
+
+console.log(adjacencyList);

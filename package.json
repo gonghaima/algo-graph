@@ -4,6 +4,7 @@
   "description": "graph search basics",
   "main": "graph.js",
   "scripts": {
+    "start": "node graph.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
