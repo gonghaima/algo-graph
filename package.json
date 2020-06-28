@@ -1,0 +1,19 @@
+{
+  "name": "algo-graph",
+  "version": "1.0.0",
+  "description": "graph search basics",
+  "main": "graph.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gonghaima@github.com/gonghaima/algo-graph.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gonghaima/algo-graph/issues"
+  },
+  "homepage": "https://github.com/gonghaima/algo-graph#readme"
+}
