@@ -5,13 +5,17 @@ function createNode(val, neighbors) {
     return newNode;
 };
 
-// create a node map
-
-// create a relation list
-
-// loop add relation list to node map
-
-// return first node
+/********************************************
+ *  steps                                   *
+ *                                          
+ *  create a node map                   
+ *                                          *
+ *  create a relation list             
+ *                                          *
+ *  loop add relation list to node map 
+ * 
+ *  return first node                       *
+ ********************************************/
 
 export const cloneGraph = (node) => {
     // create a node map
@@ -20,8 +24,10 @@ export const cloneGraph = (node) => {
     // create a relation map
     const relationMap = new Map();
     const dfs = (start, visited = new Set()) => {
+        // validate - if no val, just return
+        if (!start || !start.val) return;
+
         visited.add(start.val)
-        // clone.val = start.val;
         cloneMap.set(start.val, createNode(start.val))
 
         const neighbors = start.neighbors;
@@ -43,6 +49,7 @@ export const cloneGraph = (node) => {
             curNode.neighbors.push(cloneMap.get(k));
         });
     }
-    const fistClonedNode = cloneMap.get(node.val);
+    //edge case, check if exist first
+    const fistClonedNode = node && node.val ? cloneMap.get(node.val) : node;
     return fistClonedNode;
 };
