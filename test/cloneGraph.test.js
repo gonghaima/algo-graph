@@ -1,4 +1,4 @@
-import { cloneGraph } from "../src/cloneGraph";
+import cloneGraph from "../src/cloneGraph/cloneGraph_mine";
 const assert = require('assert');
 
 function Node(val, neighbors) {
@@ -39,7 +39,8 @@ node4.neighbors.push(node3)
 describe('cloneGraph Test', () => {
     it('should return cloned node for case1', () => {
         const cloned = cloneGraph(node1);
-        assert.equal(cloned, [[1, 2]]);
+        assert.equal(cloned.val, 1);
+        assert.equal(cloned.neighbors[0].val, 2);
     });
 });
 

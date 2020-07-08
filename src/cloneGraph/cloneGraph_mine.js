@@ -17,7 +17,7 @@ function createNode(val, neighbors) {
  *  return first node                       *
  ********************************************/
 
-export const cloneGraph = (node) => {
+export default node => {
     // create a node map
     const cloneMap = new Map();
 
