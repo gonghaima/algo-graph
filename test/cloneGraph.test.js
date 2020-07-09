@@ -1,5 +1,6 @@
 import cloneGraph from "../src/cloneGraph/cloneGraph_mine";
 import cloneGraph_V1 from "../src/cloneGraph/cloneGraph_v1";
+import cloneGraph_V2 from "../src/cloneGraph/cloneGraph_v2";
 const assert = require('assert');
 
 function Node(val, neighbors) {
@@ -38,14 +39,20 @@ node4.neighbors.push(node1)
 node4.neighbors.push(node3)
 
 describe('cloneGraph Test', () => {
-    it('should return cloned node for solution1', () => {
+    it('should return cloned node', () => {
         const cloned = cloneGraph(node1);
         assert.equal(cloned.val, 1);
         assert.equal(cloned.neighbors[0].val, 2);
     });
 
-    it('should return cloned node for solution2', () => {
+    it('should return cloned node for v1', () => {
         const cloned = cloneGraph_V1(node1);
+        assert.equal(cloned.val, 1);
+        assert.equal(cloned.neighbors[0].val, 2);
+    });
+
+    it('should return cloned node for v2', () => {
+        const cloned = cloneGraph_V2(node1);
         assert.equal(cloned.val, 1);
         assert.equal(cloned.neighbors[0].val, 2);
     });
