@@ -17,4 +17,9 @@ describe('deskCity Test', () => {
         const destination = destCity(paths);
         assert.equal(destination, "Z");
     });
+    it('should return the destination for case4', () => {
+        const paths = [["B", "C"], ["D", "B"], ["C", "A"]];
+        const destination = destCity(paths);
+        assert.equal(destination, "A");
+    });
 });
