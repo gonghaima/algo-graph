@@ -3,8 +3,9 @@ export default paths => {
     let next = paths;
     visited.add(paths[0]);
     let dest = paths[0][1];
+    let keepChecking = true;
 
-    while (next.length > 0) {
+    while (next.length > 0 && keepChecking) {
         let toBeVisited = [];
         next.map(path => {
             if (!visited.has(path)) {
@@ -16,6 +17,7 @@ export default paths => {
                 }
             }
         })
+        if (next.length === toBeVisited.length) keepChecking = false;
         next = toBeVisited;
     }
     return dest;
