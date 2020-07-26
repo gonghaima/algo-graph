@@ -6,7 +6,7 @@ It is guaranteed that the graph of paths forms a line without any loop, therefor
 
 Example 1:
 
-```
+```shell
 Input: paths = [["London","New York"],["New York","Lima"],["Lima","Sao Paulo"]]
 Output: "Sao Paulo"
 ```
@@ -15,7 +15,7 @@ Explanation: Starting at "London" city you will reach "Sao Paulo" city which is 
 
 Example 2:
 
-```
+```shell
 Input: paths = [["B","C"],["D","B"],["C","A"]]
 Output: "A"
 Explanation: All possible trips are: 
@@ -28,7 +28,7 @@ Clearly the destination city is "A".
 
 Example 3:
 
-```
+```shell
 Input: paths = [["A","Z"]]
 Output: "Z"
 ```
