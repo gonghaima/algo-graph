@@ -1,3 +1,5 @@
+// time 40.55%, space 20.69%
+
 export default paths => {
     const visited = new Set();
     let next = paths;
