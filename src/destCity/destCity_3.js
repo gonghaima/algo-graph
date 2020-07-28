@@ -1,4 +1,4 @@
-// time 50.60%, 20.69%
+// time 20.22%, 17.71%
 export default paths => {
     const seen = new Set(paths.map(el => el[0]))
     for (let i of paths) {
