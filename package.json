@@ -5,7 +5,8 @@
   "main": "graph.js",
   "scripts": {
     "start": "node graph.js",
-    "test": "mocha --require @babel/register"
+    "test": "mocha --require @babel/register -g",
+    "test-all": "mocha --require @babel/register"
   },
   "repository": {
     "type": "git",
