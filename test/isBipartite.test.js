@@ -2,7 +2,7 @@ import assert from 'assert';
 import { data } from "../src/isBipartite/data"
 import isBipartiteSolutions from "../src/isBipartite";
 
-describe('deskCity ', () => {
+describe('isBipartite ', () => {
 
     data.map((dataObj, dataIdx) => {
         Object.values(isBipartiteSolutions).map((solution, solutionIdx) => {
