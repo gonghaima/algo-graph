@@ -1,28 +1,32 @@
 export default (N, dislikes) => {
     if (!dislikes.length) return true;
-
-    const colors = Array(N + 1).fill(0);
+    const colors = new Map();
+    const stack = [];
     const graph = {};
-
     for (let [a, b] of dislikes) {
         graph[a] = (graph[a] || new Set()).add(b);
         graph[b] = (graph[b] || new Set()).add(a);
     }
 
     for (let i = 1; i <= N; i++) {
-        if (!colors[i] && !dfs(i, 1)) return false;
-    }
 
-    return true;
+        if (colors.has(i)) continue;
 
-    function dfs(idx, color) {
-        if (colors[idx]) return color === colors[idx];
-        if (!graph[idx]) return true;
-        colors[idx] = color;
+        colors.set(i, true);
+        stack.push(i);
 
-        for (let vertex of graph[idx]) {
-            if (!dfs(vertex, -color)) return false;
+        while (stack.length > 0) {
+            let current = stack.pop();
+
+            if (!graph[current]) return true;
+            for (let neighbour of graph[current]) {
+                if (colors.get(neighbour) === colors.get(current)) return false;
+                if (!colors.has(neighbour)) {
+                    colors.set(neighbour, !colors.get(current));
+                    stack.push(neighbour);
+                }
+            }
         }
-        return true;
     }
+    return true;
 };
