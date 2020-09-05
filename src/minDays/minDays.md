@@ -8,42 +8,46 @@ In one day, we are allowed to change any single land cell (1) into a water cell 
 
 Return the minimum number of days to disconnect the grid.
 
- 
+## Example 1
 
-Example 1:
-
-
-
-Input: grid = [[0,1,1,0],[0,1,1,0],[0,0,0,0]]
+```Input: grid = [[0,1,1,0],[0,1,1,0],[0,0,0,0]]
 Output: 2
 Explanation: We need at least 2 days to get a disconnected grid.
 Change land grid[1][1] and grid[0][2] to water and get 2 disconnected island.
-Example 2:
+```
 
-Input: grid = [[1,1]]
+## Example 2
+
+```Input: grid = [[1,1]]
 Output: 2
 Explanation: Grid of full water is also disconnected ([[1,1]] -> [[0,0]]), 0 islands.
-Example 3:
+```
 
-Input: grid = [[1,0,1,0]]
+## Example 3
+
+```Input: grid = [[1,0,1,0]]
 Output: 0
-Example 4:
+```
 
-Input: grid = [[1,1,0,1,1],
+## Example 4
+
+```Input: grid = [[1,1,0,1,1],
                [1,1,1,1,1],
                [1,1,0,1,1],
                [1,1,0,1,1]]
 Output: 1
-Example 5:
+```
 
-Input: grid = [[1,1,0,1,1],
+## Example 5
+
+```Input: grid = [[1,1,0,1,1],
                [1,1,1,1,1],
                [1,1,0,1,1],
                [1,1,1,1,1]]
 Output: 2
- 
+```
 
 Constraints:
 
 1 <= grid.length, grid[i].length <= 30
-grid[i][j] is 0 or 1.
+grid[i][j] is 0 or 1
