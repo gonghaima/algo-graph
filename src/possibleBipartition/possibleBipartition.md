@@ -1,4 +1,4 @@
-# 886. Possible Bipartition
+# 886. [Possible Bipartition](https://leetcode.com/problems/possible-bipartition/)
 
 Given a set of N people (numbered 1, 2, ..., N), we would like to split everyone into two groups of any size.
 
