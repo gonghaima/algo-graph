@@ -1,4 +1,4 @@
-# Is Graph Bipartite?
+# 785. [Is Graph Bipartite?](https://leetcode.com/problems/is-graph-bipartite/)
 
 Given an undirected graph, return true if and only if it is bipartite.
 
