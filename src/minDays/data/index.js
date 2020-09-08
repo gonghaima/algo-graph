@@ -24,5 +24,9 @@ export const data = [
         [1, 1, 0, 1, 1],
         [1, 1, 1, 1, 1]],
         expectedResult: 2
+    },
+    {
+        inputData: [[0, 0, 0], [0, 1, 0], [0, 0, 0]],
+        expectedResult: 1
     }
 ]

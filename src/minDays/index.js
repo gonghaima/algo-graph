@@ -1,3 +1,3 @@
-import minDays_dfs_1 from "./minDays_dfs";
+import minDays_critical_points from "./minDays_critical_points";
 
-export default { minDays_dfs_1 };
+export default { minDays_critical_points };
