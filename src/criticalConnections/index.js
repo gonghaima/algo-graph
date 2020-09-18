@@ -1,4 +1,4 @@
 
-import trajan_algo from "./trajan_algo";
+import tarjan_algo from "./tarjan_algo";
 
-export default { trajan_algo };
+export default { tarjan_algo };
