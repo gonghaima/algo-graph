@@ -10,7 +10,8 @@ Example 1:
 
 ![crinetwork.png](crinetwork.png)
 
-```Input: n = 4, connections = [[0,1],[1,2],[2,0],[1,3]]
+```
+Input: n = 4, connections = [[0,1],[1,2],[2,0],[1,3]]
 Output: [[1,3]]
 Explanation: [[3,1]] is also accepted.
 ```

@@ -12,7 +12,8 @@ export const data = [
         expectedResult: 0
     },
     {
-        inputData: [[1, 1, 0, 1, 1],
+        inputData: 
+       [[1, 1, 0, 1, 1],
         [1, 1, 1, 1, 1],
         [1, 1, 0, 1, 1],
         [1, 1, 0, 1, 1]],
