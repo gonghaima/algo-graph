@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/gonghaima/algo-graph#readme",
   "devDependencies": {
-    "mocha": "^8.0.1",
+    "mocha": "^8.4.0",
     "@babel/cli": "^7.7.4",
     "@babel/core": "^7.7.4",
     "@babel/preset-env": "^7.7.4",
